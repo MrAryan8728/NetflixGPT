@@ -1,10 +1,25 @@
 import './App.css'
+import Body from './Components/Body'
+import Browse from './Components/Browse'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+
+const routes = createBrowserRouter([
+  {
+    path:"/",
+    element:<Body/>
+  },
+  {
+    path:"/browse",
+    element:<Browse/>
+  }
+]
+)
 
 function App() {
 
   return (
     <>
-    <h1 className=' font-bold text-2xl text-green-600'>Aryan is here with tailwind and React</h1>
+    <RouterProvider router={routes}/>
     </>
   )
 }
