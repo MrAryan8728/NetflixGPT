@@ -16,7 +16,7 @@ const MovieList = ({ title, movies }) => {
 
     return (
         <div>
-            <h1 className='text-2xl font-semibold text-white mb-5'>{title}</h1>
+            <h1 className='md:text-2xl font-semibold text-white mb-5'>{title}</h1>
             <div style={scrollContainerStyle} className="scroll-container">
                 <div style={flexGapStyle}>
                     {movies.map((val) => (

@@ -46,15 +46,15 @@ const Header = () => {
     }
 
     return (
-        <div className='z-10 w-[100%] fixed px-8 py-2 bg-gradient-to-b from-black flex justify-between'>
+        <div className='z-10 w-[100%] absolute md:fixed px-8 py-2 bg-gradient-to-b from-black md:flex justify-between'>
             <img
-                className='w-44'
+                className='w-36 mx-auto md:w-44 md:mx-0'
                 src={LOGO_IMAGE}
                 alt='logo'
             />
             {data
                 && <div className=" flex h-10 gap-4 text-white mt-1">
-                    <h1 className=" mt-2">HELLO, {data.displayName}</h1>
+                    <h1 className=" hidden  md:block mt-2">HELLO, {data.displayName}</h1>
                     {search
                         &&
                         <select 
@@ -68,7 +68,7 @@ const Header = () => {
                         </select>
                     }
                     <button
-                        className="font-bold text-white  bg-red-700 px-4 py-2 rounded"
+                        className=" font-bold text-white  bg-red-700 px-4 py-2 rounded"
                         onClick={handleSearch}>
                         {search ? "HOME" : "Ask AI?"}
                     </button>

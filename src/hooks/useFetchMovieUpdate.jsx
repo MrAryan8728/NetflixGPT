@@ -1,9 +1,10 @@
 import { useEffect } from 'react'
 import { options } from '../utils/constants'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { setMovies } from '../utils/movieSlice'
 
 const useFetchMovieUpdate = () => {
+    const movieslist = useSelector(store => store.movies.movieslist);
 
     const dispatch = useDispatch();
 
@@ -14,7 +15,7 @@ const useFetchMovieUpdate = () => {
     }
 
     useEffect(() => {
-        fetchMovieList();
+        !movieslist && fetchMovieList();
     }, [])
 }
 

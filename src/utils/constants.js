@@ -5,7 +5,7 @@ export const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: "Bearer"+import.meta.env.REACT_APP_TMDB_KEY,
+      Authorization: `Bearer ${import.meta.env.VITE_TMDB_KEY}`,
     }
   };
 
@@ -30,4 +30,4 @@ export const options = {
     },
   ]
 
-  export const GPT_KEY = import.meta.env.REACT_APP_GPT_KEY;
+  export const GPT_KEY = import.meta.env.VITE_GPT_KEY;

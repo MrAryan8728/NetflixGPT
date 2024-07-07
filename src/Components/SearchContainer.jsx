@@ -9,7 +9,7 @@ const SearchContainer = () => {
         <SearchBar/>
         <SearchPage/>
         <div className=''>
-        <img className=' fixed left-0 top-0 -z-10' src={BG_IMAGE} alt='bg-image'/>
+        <img className='h-screen w-screen object-cover fixed left-0 top-0 -z-10' src={BG_IMAGE} alt='bg-image'/>
         </div>
     </div>
   )

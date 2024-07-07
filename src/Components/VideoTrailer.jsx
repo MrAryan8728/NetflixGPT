@@ -21,7 +21,7 @@ const VideoTrailer = ({ id }) => {
   return (
     <div className=''>
       <iframe
-        className='w-[100%] h-screen'
+        className='w-[100%] h-[520px] md:h-screen'
         src={`https://www.youtube.com/embed/${videoKey}?autoplay=1&mute=1&loop=1&playlist=${videoKey}&controls=0&modestbranding=1&showinfo=0&rel=0&fs=1`}
         title="YouTube video player"
         allow="autoplay; fullscreen">
