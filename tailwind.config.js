@@ -5,18 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      // Custom utilities and variants
-      scrollbar: {
-        'no-scrollbar': {
-          '::-webkit-scrollbar': {
-            display: 'none',
-          },
-          '-ms-overflow-style': 'none',  // IE and Edge
-          'scrollbar-width': 'none',  // Firefox
-        },
-      },
-    },
+    extend: {},
   },
   plugins: [],
 }
