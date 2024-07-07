@@ -5,9 +5,12 @@ import MovieContainer from '../Components/MovieContainer';
 import useFetchPopularUpdate from '../hooks/useFetchPopularUpdate';
 import useFetchTopRatedMovieUpdate from '../hooks/useFetchTopRatedMovieUpdate';
 import useFetchUpcomingUpdate from '../hooks/useFetchUpcomingUpdate';
+import { useSelector } from 'react-redux';
+import SearchContainer from '../Components/SearchContainer';
 
 const Browse = () => {
- 
+  const search = useSelector((state) => state.search.searchPage);
+
   useFetchMovieUpdate();
   useFetchPopularUpdate();
   useFetchTopRatedMovieUpdate();
@@ -15,9 +18,18 @@ const Browse = () => {
 
   return (
     <div>
-      <Header/>
-      <MainContainer/>
-      <MovieContainer/>
+      <Header />
+      {
+        search ? 
+        <>
+        <SearchContainer/>
+        </> 
+        : 
+        <>
+          <MainContainer />
+          <MovieContainer />
+        </>
+      }
     </div>
   )
 }

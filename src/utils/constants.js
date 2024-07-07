@@ -10,3 +10,22 @@ export const options = {
   };
 
   export const IMG_URI = "https://image.tmdb.org/t/p/w500";
+
+  export const LangOptions = [
+    {
+      options:"Hindi",
+      value:"hindi"
+    },
+    {
+      options:"English",
+      value:"en"
+    },
+    {
+      options:"Spanish",
+      value:"spanish"
+    },
+    {
+      options:"Chinese",
+      value:"mandarinChinese"
+    },
+  ]
