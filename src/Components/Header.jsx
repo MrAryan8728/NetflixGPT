@@ -46,7 +46,7 @@ const Header = () => {
     }
 
     return (
-        <div className='z-10 w-[100%] absolute px-8 py-2 bg-gradient-to-b from-black flex justify-between'>
+        <div className='z-10 w-[100%] fixed px-8 py-2 bg-gradient-to-b from-black flex justify-between'>
             <img
                 className='w-44'
                 src={LOGO_IMAGE}
@@ -58,7 +58,7 @@ const Header = () => {
                     {search
                         &&
                         <select 
-                        className=" text-black rounded"
+                        className=" text-white bg-black border-2 rounded"
                         onChange={(e) => {
                             dispatch(setLang(e.target.value))
                         }}>
@@ -70,7 +70,7 @@ const Header = () => {
                     <button
                         className="font-bold text-white  bg-red-700 px-4 py-2 rounded"
                         onClick={handleSearch}>
-                        {search ? "HOME" : "Ask GPT?"}
+                        {search ? "HOME" : "Ask AI?"}
                     </button>
                     <button
                         className="font-bold text-white border-2  bg-black px-4 py-2 rounded uppercase"

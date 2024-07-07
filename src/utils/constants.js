@@ -5,7 +5,7 @@ export const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2NmYxODEwMmQ0MmI3OTQ1YjVmMDY3ZGRkNmJhMzQwNiIsIm5iZiI6MTcyMDI3OTc2NC45MzE4ODMsInN1YiI6IjY2ODk2MDUyMTNjYTI5YWJkYzE4MDc3NCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.0-WrIqvPOeLqOZvwdXqcD4sXMPIu471aiIWPlQ0XQ3c'
+      Authorization: "Bearer"+import.meta.env.REACT_APP_TMDB_KEY,
     }
   };
 
@@ -29,3 +29,5 @@ export const options = {
       value:"mandarinChinese"
     },
   ]
+
+  export const GPT_KEY = import.meta.env.REACT_APP_GPT_KEY;
