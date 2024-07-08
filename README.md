@@ -2,7 +2,7 @@
 
 Welcome to the Netflix Clone with AI-based Movie Suggestions! This project is a full-featured clone of Netflix, offering an intuitive UI for browsing and streaming movies and TV shows. The standout feature is the AI-based suggestion system, which recommends content based on your personal interests and viewing habits.
 
-## Demo
+## Demo (Click to watch)
   [![Watch the video](https://img.youtube.com/vi/mR-BC553cEs/maxresdefault.jpg)](https://youtu.be/mR-BC553cEs)
 
 ## Features
