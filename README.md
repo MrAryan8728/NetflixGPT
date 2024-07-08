@@ -31,8 +31,7 @@ Welcome to the Netflix Clone with AI-based Movie Suggestions! This project is a 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/netflix-clone-ai.git
-   cd netflix-clone-ai
+   git clone [https://github.com/MrAryan8728/NetflixGPT]
 2. Install dependencies:
    ```bash
    npm i 
